@@ -1,0 +1,10 @@
+<FilesMatch ".tpl">
+  Order Allow,Deny
+  Deny from All
+</FilesMatch>
+ErrorDocument 404 https://dcdoomvr.infy.uk/index.php?p=404
+ErrorDocument 503 https://dcdoomvr.infy.uk/index.php?p=503
+ErrorDocument 400 https://dcdoomvr.infy.uk/index.php?p=400
+ErrorDocument 401 https://dcdoomvr.infy.uk/index.php?p=401
+ErrorDocument 403 https://dcdoomvr.infy.uk/index.php?p=403
+ErrorDocument 500 https://dcdoomvr.infy.uk/index.php?p=500

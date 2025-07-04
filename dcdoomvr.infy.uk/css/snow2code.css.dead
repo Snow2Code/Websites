@@ -1,0 +1,53 @@
+/*==========================================================================*
+
+  File:        snow2code.css                     Created: 17/06/2025
+  Purpose:     The website's scheming
+
+  Project:     DCDoomVR personal site
+  Author:      Snowy  –  snow2code@protonmail.com
+  Copyright:   © 2025 DCDoomVR. All rights reserved.
+               This is personal hobby code. No warranty, no promises.
+               Please don’t nick it without asking.
+
+  Color‑blind note: no red‑green reliance anywhere. Verified for deuteranopia.
+
+ *==========================================================================*/
+
+
+
+
+/* This didn't seem to work.. using sourcebans++ nav state thing */
+#nav-active {
+    color: black;
+}
+
+#nav-nonactive {
+    color: black;
+}
+
+
+/* Color all text white. Became dead code due to being particularly efficient */
+h1, h2, h3, h4, h5 {
+    color: #E4E4E4;
+}
+
+
+/* Center all content. Became dead code due to main having these now */
+.mainwrapper {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+/* Used in the nav. Became dead code due to being a pain in my ass */
+header .nav nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    /* right: -5px; */
+    /* top: 50%; */
+    transform: translateY(10%);
+    width: 1px;
+    height: 20px;
+    background: #2b3f5a;
+}
