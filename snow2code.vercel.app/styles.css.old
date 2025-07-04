@@ -1,0 +1,194 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #D5A6FF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.highlight {
+    color: #8A2BE2;
+    text-shadow: -0.7px 0 white, 0 0.5px white, 0.5px 0 white, 0 0.5px white;
+}
+
+.highlight-orange {
+    color: #FFA600;
+    text-shadow: -0.7px 0 white, 0 0.5px white, 0.5px 0 white, 0 0.5px white;
+}
+
+.home-highlight {
+    /* Old text color: FFA600 */
+    font-size: 2rem;
+    font-weight: bold;
+    /* color: linear-gradient(to right, #5fffa2, #ff7e5f); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: -0.7px 0 #ff7e5f, 0 0.5px #5fffa2, 0.5px 0 white, 0 0.5px white;
+}
+
+
+.header-container, .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+}
+
+header h1, footer h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul, footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+/* Add this to your existing CSS */
+
+/* Glowing effect cursor */
+.glow-cursor {
+    position: absolute;
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 255, 221, 0.6), rgba(138, 43, 226, 0.6));
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.1s ease;
+}
+
+/* Make sure the links are relative for cursor positioning */
+header nav ul li a, footer nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+/* Add a slight lift on hover */
+header nav ul li a:hover, footer nav ul li a:hover {
+    color: #8A2BE2;
+    transform: translateY(-2px);
+}
+
+/* Glowing effect on hover */
+header nav ul li a:hover, footer nav ul li a:hover {
+    color: #8A2BE2; /* Purple text */
+    /*transform: translateY(-3px); /* Lift effect */
+    transition: box-shadow 2.5s ease;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 149), /* Mint glow */
+                0 0 15px 5px rgb(132, 0, 255); /* Purple glow */
+}
+
+/* Adding before pseudo-element for extra glow */
+header nav ul li a::before, footer nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s, box-shadow 1s ease;
+}
+
+header nav ul li a:hover::before, footer nav ul li a:hover::before {
+    opacity: 1;
+    transition: box-shadow 2s ease;
+    box-shadow: 0 0 20px 10px rgb(0, 255, 149), /* Mint glow */
+                0 0 20px 10px rgb(132, 0, 255); /* Purple glow */
+}
+
+.highlight {
+    color: #8A2BE2;
+    text-shadow: -0.7px 0 white, 0 0.5px white, 0.5px 0 white, 0 0.5px white;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+main {
+    flex: 1;
+    /* background: url('your-background-image.png') no-repeat center center; */
+    background-size: cover;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1, .footer-container h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul, footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}

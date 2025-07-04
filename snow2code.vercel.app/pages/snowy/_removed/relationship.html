@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="About Snowy">
+        <meta name="author" content="Lyn Snow">
+		<title>Snowy's Site - About Snowy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="/styles.css">
+		
+        <!-- <link rel="stylesheet" href="https://lynsnowie.github.io/misc/css/page_style/about_snowi.css"> -->
+        <style>
+            body {
+                /* align-items: center; */
+                background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+                display: flex;
+                font-family: 'Dosis', sans-serif;
+                font-display: swap;
+                height: inherit;
+                justify-content: center;
+            }
+
+			main h1, h2 {
+                text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+			}
+
+			section ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			section ul li:before {
+				content: "- ";
+			}
+
+			section li {
+				font-family: 'Segoe UI';
+				font-size: 25px;
+				color: black;
+				text-shadow: -0.8px 0 white, 0 0.5px white, 0.8px 0 white, 0 -0.5px white;
+				position: relative;
+				z-index: 10000; /* Higher value for the header */
+			}
+        </style>
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<h1><span class="highlight-orange">Kitsune</span> Hub</h1>
+				<nav>
+					<ul>
+						<ul id="header-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-container">
+				<h1><span class="highlight-orange"></span></h1>
+				<nav>
+					<ul>
+						<ul id="subheader-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="intro">
+                <div id="invalid" style="display: block;">
+                    <h1>Sorry about that.</h1>
+                    <p>You didn't add any paramters (add "?snowship=whatever" to load content. Sample: ?snowship=snowcone)</p>
+                </div>
+                <div id="snowship snowcone" style="display: none;">
+                    <h1 style="font-size: 30px; padding: 50px">The story of Snowy's Relationship called Snowcone (Snowy x Cone)</h1>
+                    <h1 style="font-size: 30px; padding: 1px; padding-bottom: 100px;">This is a real story.</h1>
+                    <h2 style="font-size: 25px; padding: 10px">Snowcone: Snowy x Cone</h2>
+                    <h2 style="font-size: 20px; padding: 10px">The relationship between Snowy and Cone, known as Snowcone started on the TF2 Otaku TF ZE EU server (141.193.68.170:27015).</h2>
+                    <h2 style="font-size: 20px; padding: 10px">It all began when Derply created the Snowy x Cone ship. At that time, Snowy hadn’t felt joy in years, but Derply's fun idea changed everything.</h2>
+                    <h2 style="font-size: 20px; padding: 10px">Even though Snowy is aroace and had never experienced feelings like this before, something about Cone was different. This became Snowy’s first-ever relationship with someone, and it brought an unexpected sense of happiness.</h2>
+                    <h2 style="font-size: 20px; padding: 10px">As more people in the Otaku ZE EU community began supporting Snowcone, the relationship blossomed. Now, Snowy and Cone are together, and it’s all thanks to Derply and the Otaku ZE EU community!</h2>
+                
+                
+                    <!-- The relationship between Snowy and Cone, known as Snowcone, started on the TF2 Otaku TF ZE EU server (141.193.68.170:27015). It all began when Derply created the Snowy x Cone ship. At that time, Snowy hadn’t felt joy in years, but Derply's fun idea changed everything.
+
+                    Though Snowy is aroace and had never experienced feelings like this before, something about Cone was different. This became Snowy’s first-ever relationship with someone, and it brought an unexpected sense of happiness.
+                    
+                    As more people in the Otaku ZE EU community began supporting Snowcone, the relationship blossomed. Now, Snowy and Cone are together, and it’s all thanks to Derply and the Otaku ZE EU community! -->
+                </div>
+            </section>
+		</main>
+		
+		<footer>
+			<div class="header-container">
+				<h1><span class="highlight-orange"></span></h1>
+				<nav>
+					<ul>
+						<ul id="subfooter-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-container">
+				<h1><span class="highlight-orange">Kitsune</span> Hub</h1>
+				<nav>
+					<ul>
+						<ul id="footer-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+		<script src="/js/oneko.js"></script>
+		<script src="/js/pages/snowy-subpages.js"></script>
+		<script src="/js/pages/home.js"></script>
+        <script src="/js/queryparam.js"></script>
+	</body>
+</html>

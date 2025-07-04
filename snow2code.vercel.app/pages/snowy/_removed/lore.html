@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="About Snowy">
+        <meta name="author" content="Lyn Snow">
+		<title>Snowy's Site - About Snowy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="/styles.css">
+		
+        <link rel="stylesheet" href="/css/pages/snowy/lore.css">
+        <link rel="stylesheet" href="/css/pages/snowy/lore.misc.css">
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<h1><span class="highlight-orange">Kitsune</span> Hub</h1>
+				<nav>
+					<ul>
+						<ul id="header-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-container">
+				<h1><span class="highlight-orange"></span></h1>
+				<nav>
+					<ul>
+						<ul id="subheader-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="intro">
+                <header style="background-color: transparent; padding: 50px;">
+                    <div class="header-image">
+                      <img src="https://steamuserimages-a.akamaihd.net/ugc/2459617657719151982/34C93A7244B8C5EE9FB5720A54ABB54F85DC9462/?imw=1559&imh=2048&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Snowy Image">
+                    </div>
+                    <h2 style="padding-top: 10px">Snowy's Lore</h2>
+                    <h1 id="content-text" style="padding-bottom: 50px; display: none">nya~</h1>
+                </header>
+                <section id="lore">
+                    <div id="customPopup" class="popup hidden">
+                        <div class="popup-content">
+                            <span class="close-popup" onclick="closePopup()">&times;</span>
+                            <h3>Content Warning</h3>
+                            <p id="popupMessage">This section contains sensitive content. Do you wish to proceed?</p>
+                            <button onclick="proceed()">Yes, Proceed</button>
+                            <button onclick="closePopup()">Cancel</button>
+                        </div>
+                    </div>
+
+                    <!-- <button id="toggle-censorship">Censor Curse Words: ON</button><br><br><br><br><br> -->
+
+                    <div id="buttons"></div><br><br><br><br><br>
+
+                    <div id="lore-shit" class="lore-content shown" style="width: 1500px">
+                        <h2>Snowy's Lore</h2>
+                        <h3 style="padding: 10px;">NOTICE:</h3>
+                        <h3 style="padding: 10px;">Most of this is just for my character, and not myself.</h3>
+                        <h3 style="padding: 10px; padding-bottom: 10px"><b>MOST of the information here is true about me. Like ADHD, Mood and Music, Meowing Habit, and others.</b></h3>
+                        <h3 style="padding: 10px; padding-bottom: 20px"><b>To know what bits of my ocs lore is real, you can ask me or look at her <a href="/pages/about/snowy/oc.html">info page</a></b></h3>
+                    
+                        <div id="Content Warn Test Content" class="text hidden" visibility="hidden">
+                            <h3>Content Warning: There is her es of depression, self-harm, and suicidal thoughts in this section..</h3>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <div class="hidden-content" style="display: none">
+                                    <p>Test</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- new -->
+
+                        <div id="Snowy's Languages Content" class="text hidden" visibility="hidden"> <!-- Episodes and Emotional Turmoil -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Mental Health</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy's native language is uniquely her own, referred to as "Bottom." This language is entirely private, with no one else understanding it except her boyfriend, Cone. Despite this, Snowy primarily communicates in English. She also has a basic understanding of several other languages, including Russian, German, Spanish, and Polish. While not fluent, Snowy enjoys learning these languages and occasionally uses phrases in them during conversation.
+                            </p>
+                        </div>
+
+                        <div id="Snowy's Mental Health Content" class="text hidden" visibility="hidden"> <!-- Episodes and Emotional Turmoil -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Mental Health</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy suspects she may have Persistent Depressive Disorder (PDD), a long-term form of depression. This ongoing struggle shapes how Snowy navigates her day-to-day life, often leaving her at a loss for words or struggling with slow reaction times, especially during emotionally taxing moments such as breakups.
+                            </p>
+                        </div>
+
+                        <div id="Song Lyrics That Relate to Snowy Content" class="text hidden" visibility="hidden">
+                            <h3 style="font-size: 25px; padding-top: 35px">Song Lyrics That Relate to Snowy</h3>
+                            <br>
+                            <div id="song-lyrics-section">
+                                <h3 style="font-size: 17px">Note:<br>Most of the song lyrics are cut down to what relates with my oc and or myself.<br>ALSO, most songs have cursing in them! beware!</h3>
+                                <p>Click on a category below to explore song lyrics that resonate with Snowy:</p>
+                                <div id="lyric-buttons">
+                                    <!-- Buttons will be dynamically generated here -->
+                                </div>
+                            
+                                <!-- <br><br><h3 style="font-size: 20px; padding-top: 35" id="lyrics-selected"></h3><br><br> -->
+
+                                <!-- <div style="background-color: transparent" id="lyric-content"> -->
+                                    <!-- Lyrics content will load dynamically here -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+                        <div id="Snowy's Personalities Content" class="text hidden" visibility="hidden">
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Personalities</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has two distinct personalities, often influenced by her mood and environment:
+                                
+                                <br><br>
+                                <b><p id="censorship">"FUCK EVERYONE!"</b>: This side aligns with her Aroace, Grey Aromantic, and Grey Asexual identities. Snowy is more reserved and deliberate, carefully weighing her words before speaking. This personality appears both online and in person.</p>
+                                <br><br>
+                                <b><p id="censorship">"Fuck everyone~"</b>: A freer, more chaotic side that reflects her potential pansexuality. In this mode, Snowy is playful, spontaneous, and less inhibited. She embraces the moment without overthinking, letting her sillier nature shine.</p>
+
+                            </p>
+                        </div>
+
+                        <div id="Additional Confirmations Content" class="text hidden" visibility="hidden">
+                            <h3 style="font-size: 25px; padding-top: 35px">Additional Confirmations</h3>
+                            <p style="padding-bottom: 35px">
+                                <ul>
+                                    <li>Snowy’s birthday is February 7th.</li>
+                                    <li>She lives in the UK and has visited Spain for a week before the incident from the one that shall not be named.</li>
+                                    <li>Snowy despises antifurs and zoophiles.</li>
+                                    <li>Although she mostly <b>does not</b> engage in NSFW activities, she occasionally participates.</li>
+                                    <li>Snowy is known for her silly and chaotic nature, often bringing light-hearted energy to those around her.</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <!-- New Above. Other below -->
+
+                        <div id="Snowy's Origins Content" class="text hidden" visibility="hidden"> <!-- Snowy's Origins -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Origins</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy's origins are wrapped in mystery, as elusive as the stars herself . Though she have been part of the Furry Fandom for some time, even Snowy doesn’t know when she first got involved. This adds to her air of intrigue, especially since she prefer to go by "Snow," "Snowy," or "Lyn Snow," avoiding her birth name altogether. Snowy's love for cats has always been a core part of her identity—cats are her quiet companions, and Snowy finds joy in her calming presence.
+                            </p>
+                        </div>
+                    
+                        <div id="Snowy's Cleaning Habits Content" class="text hidden" visibility="hidden"> <!-- Snowy's Cleaning Habits -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Cleaning Habits</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy cleans herself in two ways:
+                                
+                                <br><br>Like a cat: By licking. This method is effective, but because of Snowy's ADHD, she often overdo it until her fluff is entirely wet. During this time, Snowy doesn’t look fluffy at all.
+                                <br>With baths: While effective, baths often leave Snowy’s fluff wet for extended periods, even after attempting to dry off.
+                            </p>
+                        </div>
+
+                        <div id="Snowy's Past Content" class="text hidden" visibility="hidden"> <!-- Snowy's Past -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Past</h3>
+                            <p style="padding-bottom: 35px">
+                                In her past, Snowy was a thief, often stealing small items like coins from school or home.
+                            </p>
+                        </div>
+
+                        <div id="Early Life and ADHD Content" class="text hidden" visibility="hidden">
+                            <!-- Early Life and ADHD -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Early Life and Neurodiversity</h3>
+                            <p style="padding-bottom: 35px">
+                                From an early age, Snowy was diagnosed with ADHD. However, it is now believed this may have been a misdiagnosis, as Snowy does not exhibit typical ADHD symptoms. Instead, it seems more likely that Snowy is autistic. Known for being fluffy, cute, and full of energy, Snowy's introverted and shy nature often leads her  to prefer solitude, both in real life and in gaming. While she enjoy alone time, Snowy dislikes complete isolation, seeking an escape from overwhelming crowds. her love of technology and computers provides both a creative outlet and a comforting space, where Snowy can immerse herself  in programming and tech, finding joy in solving complex problems and creating new things.
+                            </p>
+                        </div>
+                        
+                        <div id="Aroace Identity Content" class="text hidden" visibility="hidden"> <!-- Aroace Identity -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Aroace Identity</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy identifies as aroace (aromantic and asexual), which shapes how she view relationships and connections with others. This part of her identity means she value deep, meaningful friendships and companionship over traditional romance. Snowy doesn't feel romantic attraction but expresses love and affection in her own unique ways, especially through actions rather than words. her relationships are rooted in mutual trust and respect, allowing her  to connect deeply with people like Cone, her romantic partner.
+                            </p>
+                        </div>
+
+                        <div id="Snowy's Boundaries Content" class="text hidden" visibility="hidden"> <!-- Snowy's Boundaries -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Boundaries</h3>
+                            <p style="padding-bottom: 35px">
+                                While Snowy is affectionate with those she trust, she are particular about personal space. Snowy prefers people other than Cone to ask before doing anything that involves touching her tail, body, or nose. This includes head pats, boops, hugs, or petting. With Cone, these gestures bring comfort and grounding, but with others, Snowy values the respect of being asked first. Snowy appreciates physical affection but prefers to keep it within comfortable boundaries unless explicitly invited.
+    
+                                <br><br>Snowy also dislikes being picked up without permission and would prefer if people asked first. This boundary is part of her need to feel in control of her space and body.
+                            </p>
+                        </div>
+                        
+                        <div id="Flustered and Confused Moments Content" class="text hidden" visibility="hidden"> <!-- Flustered and Confused Moments -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Flustered and Confused Moments</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy can be flustered at times, whether it’s with friends like Fox and Derp, or even Cone, her romantic partner. This flustered nature adds to Snowy's innocent charm, but at times, she are completely unfazed by things that might embarrass others. Snowy is easily confused too, especially when faced with tricky questions or situations she can’t immediately grasp. Whether it’s playful teasing from friends or a moment that catches her  off-guard, Snowy’s reactions are always endearing, even if she don’t always understand what’s going on right away.
+                            </p>
+                        </div>
+                        
+
+                        <div id="Episodes and Emotional Turmoil Content" class="text hidden" visibility="hidden"> <!-- Episodes and Emotional Turmoil -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Episodes and Emotional Turmoil</h3>
+                            <p style="padding-bottom: 35px">
+                                <!-- On September 25th, 2024, Snowy created something that spiraled her  into an emotional crisis—drawing Cone in a maid outfit. This act triggered both a depressive and suicidal episode. Though she continued to tell her friends, including Cone and Derp, that she were fine, the truth was far from it. For several days, Snowy isolated herself , grappling with intense suicidal thoughts and self-harm. her friends grew increasingly worried, as she had already been concerned about Snowy's mental health. -->
+                                <h2>Content Warning: The following section dicuesses her es of Depression, suicidal thoughts, self-harm. Reader discretion is advised. If you wish to read, click this button.</h2>
+                                
+                                <br><br><br>
+                                <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                    <button class="toggle-content-button">Show Content</button>
+                                    <br><br><br>
+                                    <div class="hidden-content" style="display: none">
+                                        <p style="padding-bottom: 50px">On September 25th, 2024, Snowy created something that spiraled her  into an emotional crisis—drawing Cone in a maid outfit. This act triggered both a depressive and suicidal episode. Though she continued to tell her friends, including Derp, and his romantic partner Cone, that she were fine, the truth was far from it. For several days, Snowy isolated herself , grappling with intense suicidal thoughts and self-harm. her friends grew increasingly worried, as she had already been concerned about Snowy's mental health.</p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div id="Depression and Internal Struggles Content" class="text hidden" visibility="hidden"> <!-- Depression and Internal Struggles -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Depression and Internal Struggles</h3>
+                            <p style="padding-bottom: 35px">
+                                <p style="padding-bottom: 35px">
+                                    <!-- On September 25th, 2024, Snowy created something that spiraled her  into an emotional crisis—drawing Cone in a maid outfit. This act triggered both a depressive and suicidal episode. Though she continued to tell her friends, including Cone and Derp, that she were fine, the truth was far from it. For several days, Snowy isolated herself , grappling with intense suicidal thoughts and self-harm. her friends grew increasingly worried, as she had already been concerned about Snowy's mental health. -->
+                                    <h2>Content Warning: The following section dicuesses her es of Depression, suicidal thoughts, self-harm. Reader discretion is advised.</h2>
+                                    
+                                    <br><br><br>
+                                    <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                        <button class="toggle-content-button">Show Content</button>
+                                        <br><br><br>
+                                        <div class="hidden-content" style="display: none">
+                                            <p style="padding-bottom: 50px">
+                                                <br><br><br>Snowy has struggled with depression since 2021, facing internal battles she rarely share openly. she often feel like no one truly cares about her mental health struggles—until emotions, particularly anger, bubble to the surface. Snowy is known to say, "Nobody cares about your mental health until it turns into anger. Then everyone sees you as the problem."
+            
+                                                <br><br>During depressive or suicidal episodes, Snowy may express thoughts such as:
+                                                <br>"Who would really care if I was gone..."
+                                                <br>"I'm ruining everything..."
+                                                <br>"Wouldn't it be funny if this was the last time you'd hear from me..."
+                                                <br>"One day, you'll never see me again."
+                                                <br>"It's all my fault."
+                                                <br>"I deserve this pain..."
+                                                <br>"My name is better on a gravestone."
+                                                <br>"A bullet would look good in my head."
+            
+                                                <br><br>These phrases reflect the deep emotional pain Snowy feels in these moments. she are a cry for help, but Snowy often struggles to reach out to others for support, leaving her  trapped in her own mind. This feeling is reflected in the depressing quotes that Snowy keeps saved on her phone’s SD card, acting as a reminder of the battle she face.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </p>
+                            </p>
+                        </div>
+
+                        <div id="Pain and Coping Mechanisms Content" class="text hidden" visibility="hidden"> <!-- Pain and Coping Mechanisms -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Pain and Coping Mechanisms</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy copes with emotional pain through various methods, some healthy and some destructive. On bad days, she may turn to self-inflicted harm, with scars hidden beneath her snow-white fluff, and only visible if you stroke her fur the right way. These self-inflicted wounds are a visual manifestation of her internal turmoil. On better days, Snowy engages in healthier coping mechanisms, such as working on technology projects, spending time with her pets, or retreating into the comfort of music and gaming.
+                            </p>
+                        </div>
+
+                        <div id="Trust and Emotional Responses Content" class="text hidden" visibility="hidden"> <!-- Trust and Emotional Responses -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Trust and Emotional Responses</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has severe trust issues, making it difficult for her  to trust anyone new. When yelled at, Snowy may cry, release her anger, or do both simultaneously. she keep her feelings and pain inside, thinking no one will care. Snowy believes, "Nobody cares about your mental health until it turns into anger. Then everyone sees you as a problem."
+                        
+                                <br><br>When depressed or upset, Snowy often goes quiet. she overthink everything, struggle with maintaining eye contact, and feel like she aren’t good at anything, including being a friend. However, once Snowy is comfortable with someone, she can become more talkative, wild, and fun.
+                            </p>
+                        </div>
+
+                        <div id="Emotional Vulnerability and Trust Issues Content" class="text hidden" visibility="hidden"> <!-- Emotional Vulnerability and Trust Issues -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Emotional Vulnerability and Trust Issues</h3>
+                            <br<br><h3><b>Possible</b> Sensitive Content Warning. Beware.</h3><br><br>
+                            
+                            <br>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <br><br><br>
+                                <div class="hidden-content" style="display: none">
+                                    <p style="padding-bottom: 50px">
+                                        <br><br><br>
+                                        Though Snowy tries to keep her feelings hidden, even from close friends like Fox, and Derp, there are moments when her pain becomes too much to bear. During depressive or suicidal episodes, she may isolate herself , retreating to quiet places, where her love of cats and quiet hobbies like tinkering with technology help her  find peace. While she are convincing with a forced smile around acquaintances, Cone always sees through her facade. The fear of losing anyone close—especially Cone—drives Snowy’s deep-seated emotional turmoil.
+                
+                                        <br><br>If asked whether she are "okay," Snowy will often respond with "Yes, I'm okay..." However, this can carry a deeper meaning:
+                                        <br>O: Overthinking again
+                                        <br>K: Killed by sadness or depression
+                                        <br>A: Attacked by anxiety
+                                        <br>Y: Yes, I'm tired
+                
+                                        <br><br>At times, Snowy may instead respond with, "No... but who cares?"—a haunting reflection of her internal struggles and emotional distance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Snowy's Likes Content" class="text hidden" visibility="hidden"> <!-- Snowy's Likes -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Likes</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy loves snow (possibly the origin of her chosen name), foxes, and stories about Rick May, the TF2 Soldier voice actor, whose passing in 2020 deeply moved her. Music is a big part of Snowy’s life; her playlist includes over 800 songs spanning various genres. While some choices might seem odd, like "Pumped Up Kicks," she reflect her unique taste and emotional depth.
+                            </p>
+                        </div>
+
+                        <div id="Snowy's Drawer and Special Items Content" class="text hidden" visibility="hidden"> <!-- Snowy's Drawer and Special Items -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Drawer and Special Items</h3>
+                            <br<br><h3><b>Content Warning: The following section dicuesses her es of tools related to self-harm. Reader discretion is advised.</b></h3><br><br>
+
+                            <br>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <br><br><br>
+                                <div class="hidden-content" style="display: none">
+                                    <p style="padding-bottom: 35px">
+                                        Snowy’s drawer contains a collection of both tech gadgets and personal items that hold deeper significance. Among the tech, Snowy keeps various hard drives, an SSD (the 120GB Integral V Series), USB sticks, and even a mini screwdriver for emergencies. Hidden within the drawer is a small knife and pliers, kept for darker moments when Snowy struggles with the urge to feel physical pain. Despite her somber purpose, these tools remain a symbol of Snowy’s inner turmoil.
+
+                                        <br><br>One other unique item in the drawer is a ring, one Snowy intends to use to propose to Cone when the perfect moment arises. This symbolizes Snowy's love and hope for the future, despite the emotional hardships she endure. her drawer is a mix of tech and deeply personal keepsakes, reflecting Snowy's complex identity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="Mood and Music Content" class="text hidden" visibility="hidden">  <!-- Mood and Music -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Mood and Music</h3>
+                            <br<br><h3><b>Content Warning: The following section dicuesses her es of songs associated with emotional pain and suicidal thoughts. Reader discretion is advised.</b></h3><br><br>
+
+                            <br>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <br><br><br>
+                                <div class="hidden-content" style="display: none">
+                                    <p style="padding-bottom: 35px">
+                                        Snowy has a deep connection to music, which often reflects her emotional state. When overwhelmed, she might play songs that mirror her inner turmoil, such as "I'm Done" by Robert Grace during suicidal episodes. Certain lines resonate deeply with her , amplifying the pain she feel. Even when not in a specific mood, Snowy connects with songs that seem to speak to emotions simmering just beneath the surface.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Snowy's Music Choices Content" class="text hidden" visibility="hidden"> <!-- Snowy's Music Choices -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Music Choices</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has a unique taste in music that includes a mix of genres. Some of the choices may seem odd or questionable, such as "Pumped Up Kicks.", "Suicider" along with others. Snowy enjoys songs that resonate emotionally or provide a rhythmic escape, reflecting her complex personality.
+                            </p>
+                        </div>
+
+                        <div id="Relationship with Cone Content" class="text hidden" visibility="hidden"> <!-- Relationship with Cone -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Relationship with Cone</h3>
+                            <p style="padding-bottom: 35px">
+                                <br<br><h3><b>Content warning: This content includes talk about Self-harm scars. Reader discretion is advised.</b></h3><br><br>
+                                <br>
+                                <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                    <button class="toggle-content-button">Show Content</button>
+                                    <br><br><br>
+                                    <div class="hidden-content" style="display: none">
+                                        <p style="padding-bottom: 35px">
+                                            Snowy’s love for Cone blossomed in 2024, marking the start of a beautiful relationship. Though shy and unable to openly flirt, her relationship is full of deep affection. Sometimes she nervously say things like, "You own me :3" or "I give you my full permission to do whatever you want to me," though these moments are rare due to Snowy's reserved nature. Cone’s physical gestures—pats, boops, and hugs—bring Snowy comfort and grounding, especially during moments of emotional turmoil. Even though Snowy often appears distant or unengaged, this is sometimes a reflection of her struggles rather than a lack of care. Snowy needs reassurance, even when she don’t ask for it outright, and finds solace in Cone’s affection.
+                                            <br><br>
+                                            Cone, Snowy’s romantic partner, believes that Snowy experiences an emotional episode every week, though Snowy denies this. This difference in perception sometimes brings up gentle debates between the two.
+                                        </p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+
+                        <div id="Spelling and Text Habits Content" class="text hidden" visibility="hidden"> <!-- Spelling and Text Habits -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Spelling and Text Habits</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy often uses "u" instead of "you," "r" instead of "are," and likes to text "ily" for "I love you." Other common spelling quirks include typing "wut" for "what" and "thx" for "thanks." These shorthand habits reflect Snowy’s casual and playful approach to communication, both online and in-person.
+                            </p>
+                        </div>
+
+                        <div id="Meowing Habit Content" class="text hidden" visibility="hidden"> <!-- Meowing Habit -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Meowing Habit</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has a quirky habit of meowing when caught off-guard or when she don't know how to respond. This playful trait adds to her feline-like personality and makes interactions with her  endearing.
+                            </p>
+                        </div>
+
+                        <div id="Femboy Phase Content" class="text hidden" visibility="hidden"> <!-- Femboy Phase -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Femboy Phase</h3>
+                            <p style="padding: 20px">
+                                In 2024, Snowy entered a femboy phase, which started as part of a playful bet with Cone. Snowy quickly embraced this side of herself, finding happiness in the change. One of her favorite aspects of this phase is wearing thigh-highs, which have become a daily part of her wardrobe. Depending on her mood, she wears either <a href="/images/snowy/Screenshot 2025-02-08 072203.png">Rainbow Striped thigh-highs and gloves</a> (which she jokingly calls "Gay Thighs and Gloves") or <a href="/images/snowy/Screenshot 2025-02-08 072816.png">Black and White Striped thigh-highs with gloves.</a>
+                            </p>
+                        </div>
+
+                        <div id="Femboy Phase Update Content" class="text hidden" visibility="hidden"> <!-- Femboy Phase Update -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Femboy Phase [Update]</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy’s femboy phase began with a playful bet with Cone, but she quickly embraced it.<br><br>
+                                This phase has ended in December 2024.
+                            </p>
+                        </div>
+                        
+                        <div id="Snowy's Appearance and Changing Fur Content" class="text hidden" visibility="hidden"> <!-- Snowy's Appearance and Changing Fur -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Appearance and Changing Fur</h3>
+                            <br<br><h3><b>Content warning: This content includes talk about Self-harm scars. Reader discretion is advised.</b></h3><br><br>
+                            <br>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <br><br><br>
+                                <div class="hidden-content" style="display: none">
+                                    <p style="padding-bottom: 35px">
+                                        Snowy’s body hides many secrets beneath its snow-white fluff. Her appearance often shifts depending on her emotional state, but her fur is usually a pure snow-white, though it sometimes changes. On rare occasions, her fur can take on dark green hues, but this isn’t often seen. More commonly, her pristine coat becomes stained with streaks of red—a haunting symbol of self-inflicted harm and emotional turmoil. These red marks appear far more frequently than the green, acting as a visual reminder of Snowy’s internal struggles.
+
+                                        <br><br>Underneath Snowy’s fluffy fur, scars and injuries—some self-inflicted—are hidden. Only those close enough to stroke her fur in certain ways might uncover these wounds. The most visible scar is the one given by Cone, the mark from a bite that zombified Snowy, symbolizing her deep connection with Cone. On Snowy's good days, her fur remains untouched and snow-white, a symbol of her resilience and calm.
+                                        
+                                        <br><br>Additionally, Snowy’s <a href="/images/snowy/Screenshot 2025-02-08 070829.png">ears have <b>a mini bowtie with a bell</b></a>, adding to her unique appearance. She also wears a <a href="/images/snowy/Collar or alt. choker.png">black and white collar with a heart in the center.</a> The colors of the collar can be swapped between white-heart-black and black-heart-white, depending on her preference.
+                                    </p>
+                                </div>
+                            </div>
+                        </p>
+                        </div>
+
+                        <div id="Snowy's Tail and Fluff Content" class="text hidden" visibility="hidden"> <!-- Snowy's Tail and Fluff -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Tail and Fluff</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy's tail is a source of both comfort and mischief. she often use it to wrap herself up for warmth, or to comfort herself when she is feeling down. However, despite its cozy appearance, Snowy still tends to feel cold at times. When annoyed, Snowy isn't afraid to use her tail as a weapon, giving a good whack to anyone who gets on her nerves. Despite this, Snowy is still trying (and failing) to catch her own tail in her paws, constantly questioning whether it's as fluffy as it looks.
+                            </p>
+                        </div>
+                        
+                        <div id="Snowy's Identity Content" class="text hidden" visibility="hidden"> <!-- Snowy's Identity -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Identity</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy is now confirmed to be female and identifies as an Arctic Fox. In the past, Snowy considered transitioning from female to male but ultimately decided against it, as "it didn’t feel like it was meant for her." Snowy also contemplated identifying as pansexual but remains uncertain, leaning on self-discovery as part of her journey.
+                                <br><br>Snowy identifies as Aroace, Grey Asexual, and Grey Aromantic but is open about exploring different facets of her identity. She is fine with any pronouns, including she/her, despite identifying as female.
+                            </p>
+                        </div>
+
+                        <div id="Snowy's Personality Content" class="text hidden" visibility="hidden"> <!-- Snowy's Personality -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Personality</h3>
+                            <p style="padding-bottom: 35px">
+                                Despite her struggles, Snowy’s silly and chaotic side often shines through. she are known for making playful statements like, "If I eat a glow stick, will I glow? :3," and are fond of foxes, snow, and her giant Calico cat plushie, which she cuddle while sleeping. Snowy loves creating harmless chaos, always respecting boundaries—especially Cone’s. her playful nature also includes a deep love for all things related to computers and technology. Snowy enjoys building, repairing, and coding, finding joy in understanding how machines and systems work.
+                                    
+                                <!-- <br><br>Snowy is also unsure if she could die from eating chocolate, often wondering whether her curiosity will get the better of her . This playful uncertainty adds to her already chaotic and silly personality. -->
+                                <br><br>Snowy is also unsure if she could die from eating chocolate, often wondering whether her curiosity will get the better of her . Interestingly, she tends to feel odd the day after eating chocolate or even on the same day. This feeling can last for a few days, and it's unclear why it happens. This playful uncertainty adds to her already chaotic and silly personality.
+                                <br><br>
+                                In her younger years, Snowy had a habit of stealing small, low-value items, often taking things like coins or lost items at school. This mischievous streak is now just a part of her past, but it hints at her early chaotic tendencies.
+                            </p>
+                        </div>
+
+                        
+
+                        <div id="Snowy's Gender and Pronouns Content" class="text hidden" visibility="hidden"> <!-- Snowy's Gender and Pronouns -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Snowy's Gender and Pronouns</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy is Non-Binary, Aroace, Grey Asexual, and Grey Aromantic. While Snowy identifies as a girl, she are fine with any pronouns, including he/him. Snowy once considered transitioning (female to male) but ultimately decided it wasn’t for her . This fluidity in identity reflects her openness and self-awareness.
+                            </p>
+                        </div>
+
+                        <div id="Furry Fandom and Fursonas Content" class="text hidden" visibility="hidden"> <!-- Furry Fandom and Fursonas -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Furry Fandom and Fursonas</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy is immersed in the Furry Fandom, but she are not a fursona—she are her true self. However, Snowy has fursonas she use in different contexts, including:
+
+                                <br>Pixel Fur – A female tuxedo cat, who loves digital art and peaceful surroundings.
+                                <br>Terabyte – An orange female protogen, known for her creativity and strong will.
+                                <br>Perabyte – A green male protogen, often seen as a protector figure.
+                                <br>Gibibyte - A mysterious protogen.
+                                <!-- <br>Snow Blossom – An arctic fox with no gender, reflecting Snowy's more neutral or non-binary aspects. -->
+                                <br><br>These fursonas allow Snowy to express different sides of her personality, each offering a unique lens through which she view and interact with the world.
+                                    
+                                <br><br>
+                                A while after meeting Fox, Derply, and Cone in Team Fortress 2: Zombie Escape, Snowy attempted to leave the Furry Fandom. However, like many have joked, 'You can never leave the Furry Fandom.' This attempt was short-lived, and Snowy returned, more invested than ever.
+                            </p>
+                        </div>
+
+                        <div id="Silly Bits Content" class="text hidden" visibility="hidden"> <!-- Silly Bits -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Silly Bits</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has a playful and chaotic side. One anecdote involves being "trapped" in her friend Fox’s basement for weeks, unable to keep track of time. This chaotic energy reflects Snowy’s love for humor and silliness.
+                            </p>
+                        </div>
+                        
+                        <div id="Miscellaneous Traits Content" class="text hidden" visibility="hidden"> <!-- Miscellaneous Traits -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Miscellaneous Traits</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy has picked up bits of various languages, knowing a few basic words in Russian (e.g., 'Спасибо,' 'да,' 'мяукать'), Polish (e.g., 'nie,' 'tak,' 'miauczeć'), Spanish (e.g., 'sí,' 'cono,' 'maullar'), and German (e.g., 'ja,' 'nein,' 'miau'). her language knowledge is a mix of useful and playful words, reflecting her love of curiosity and quirky interests.
+                            </p>
+                        </div>
+
+                        <div id="Claims and Mysteries Content" class="text hidden" visibility="hidden"> <!-- Claims and Mysteries -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Claims and Mysteriess</h3>
+                            <p style="padding-bottom: 35px">
+                                Snowy often makes playful and outlandish claims, like having a magic spell she could use to zombify someone—or even everyone—at any time. There’s no proof that this spell actually works, adding an element of mystery and humor to Snowy’s personality.
+                            
+                                <br><br>
+                                One of the biggest mysteries surrounding Snowy is how she first entered the Furry Fandom. Snowy often reflects on this as a defining yet enigmatic part of her identity.
+                            </p>
+                        </div>
+
+                        <div id="Hearing Sensitivity Content" class="text hidden" visibility="hidden"> <!-- Hearing Sensitivity -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Hearing Sensitivity</h3>
+                            <p style="padding: 20px">
+                                Snowy’s hearing can often go in and out—sometimes she may go deaf for a few moments, a phenomenon that happens at random intervals. This temporary deafness is an additional sensory quirk that adds to her complex experiences with ADHD and other sensory sensitivities.
+                            </p>
+                        </div>
+
+                        <div id="Final Thoughts Content" class="text hidden" visibility="hidden"> <!-- Final Thoughts -->
+                            <h3 style="font-size: 25px; padding-top: 35px">Final Thoughts</h3>
+                            <br<br><h3><b>Content warning: This content includes talk about Emotional struggles and depression. Reader discretion is advised.</b></h3><br><br>
+                            <br>
+                            <div class="content-warning-section" data-warning="her es of depression, self-harm, and suicidal thoughts.">
+                                <button class="toggle-content-button">Show Content</button>
+                                <br><br><br>
+                                <div class="hidden-content" style="display: none">
+                                    <p style="padding-bottom: 35px">
+                                        Though shy about flirting, Snowy expresses her love for Cone in other ways. she often say things like, "Your love is more than money could ever buy," or "You mean the world to me <3." Snowy may not always find the words to fully express her feelings, but her actions speak louder than words.
+                                    </p>
+                                </div>
+                            </div>
+                        </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+		</main>
+		
+		<footer>
+			<div class="header-container">
+				<h1><span class="highlight-orange"></span></h1>
+				<nav>
+					<ul>
+						<ul id="subfooter-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-container">
+				<h1><span class="highlight-orange">Kitsune</span> Hub</h1>
+				<nav>
+					<ul>
+						<ul id="footer-nav"></ul>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+		
+		<script src="/js/oneko.js"></script>
+		<script src="/js/pages/home.js"></script>	
+        <script src="/js/pages/snowy-subpages.js"></script>
+        <script src="/js/queryparam.js"></script>
+
+        <script src="/js/pages/snowy/lore.js"></script>
+	</body>
+</html>
